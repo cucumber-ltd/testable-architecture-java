@@ -203,7 +203,7 @@ class ShoutyStatsService {
         if (System.getenv("RELIABLE_CONNECTION") != null)
             return;
 
-        int parityControl = rnd.nextInt(3);
+        int parityControl = rnd.nextInt(10);
         if (parityControl == 1)
             throw new ShoutyStatsServiceException("shouty.reporting.ShoutyStatsService connection error - please wait a few moments and try your request again");
     }
